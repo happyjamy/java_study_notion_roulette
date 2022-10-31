@@ -57,7 +57,7 @@
         ctx.strokeStyle = "black";
         ctx.lineWidth = 2;
 
-        ctx.font = 'bold 16px Helvetica, Arial';
+        ctx.font = 'bold 30px Helvetica, Arial';
 
         for(var i = 0; i < options.length; i++) {
           var angle = startAngle + i * arc;
@@ -124,7 +124,7 @@
       var arcd = arc * 180 / Math.PI;
       var index = Math.floor((360 - degrees % 360) / arcd);
       ctx.save();
-      ctx.font = 'bold 30px Helvetica, Arial';
+      ctx.font = 'bold 38px Helvetica, Arial';
       var text = options[index]
       ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
       ctx.restore();
