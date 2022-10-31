@@ -57,7 +57,7 @@
         ctx.strokeStyle = "black";
         ctx.lineWidth = 2;
 
-        ctx.font = 'bold 12px Helvetica, Arial';
+        ctx.font = 'bold 16px Helvetica, Arial';
 
         for(var i = 0; i < options.length; i++) {
           var angle = startAngle + i * arc;
@@ -100,7 +100,7 @@
     }
 
     function spin() {
-      spinAngleStart = Math.random() * 10 + 10;
+      spinAngleStart = Math.random() * 10 + 100;
       spinTime = 0;
       spinTimeTotal = Math.random() * 3 + 20 * 1000;
       rotateWheel();
